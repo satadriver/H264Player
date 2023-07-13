@@ -1,0 +1,394 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\H264Player.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\H264Player.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 H264Player"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "H264Player 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_H264PLAYER_DIALOG DIALOGEX 0, 0, 368, 303
+STYLE DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "H264Player"
+MENU IDR_MENU
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_SHOW,"Static",SS_BITMAP | SS_SUNKEN,0,0,361,240
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    -4,245,365,6
+    PUSHBUTTON      "播放",IDC_PLAY,5,260,20,20
+    PUSHBUTTON      "停止",IDC_STOP,35,260,20,20
+    PUSHBUTTON      "截屏",IDC_CUTPIC,65,260,20,20
+END
+
+IDD_POTOPROCESSOR DIALOG DISCARDABLE  0, 0, 491, 343
+STYLE DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "图像处理器"
+MENU IDR_MENU_POTOPROCESSOR
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Canny边缘检测",IDC_RADIO_CANNY,"Button",
+                    BS_AUTORADIOBUTTON | BS_VCENTER,332,119,68,10
+    CONTROL         "Slider1",IDC_SLIDER_CANNY,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,320,130,76,14
+    LTEXT           "阈值:",IDC_STATIC_THRESH,403,135,21,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_THRESH,427,131,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "简单模糊",IDC_RADIO_BLUR,"Button",BS_AUTORADIOBUTTON,
+                    332,271,48,10
+    CONTROL         "高斯模糊",IDC_RADIO_GAUSSIAN,"Button",
+                    BS_AUTORADIOBUTTON,331,286,48,10
+    CONTROL         "中值滤波",IDC_RADIO_MEDIAN,"Button",BS_AUTORADIOBUTTON,
+                    331,305,48,10
+    CONTROL         "Slider1",IDC_SLIDER_PARA1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,380,271,76,14
+    LTEXT           "参数1:",IDC_STATIC_PARA1,409,286,24,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PARA1,427,284,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Slider1",IDC_SLIDER_PARA2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,380,297,76,14
+    LTEXT           "参数2:",IDC_STATIC_PARA2,409,313,24,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_PARA2,427,311,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_POTO_SHOW,"Static",SS_BLACKRECT | SS_SUNKEN,7,8,
+                    296,328
+    CONTROL         "Slider1",IDC_SLIDER_LAPLACE,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,332,201,76,14
+    EDITTEXT        IDC_EDIT_APERTUR_SIZE,427,201,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "拉普拉斯锐化",IDC_RADIO_LAPLACE,"Button",
+                    BS_AUTORADIOBUTTON,332,188,64,10
+    CONTROL         "图像分割",IDC_RADIO_PYRSEGMENT,"Button",
+                    BS_AUTORADIOBUTTON,332,223,48,10
+    CONTROL         "Slider1",IDC_SLIDER_PYRSEGMENT1,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,332,235,76,14
+    EDITTEXT        IDC_EDIT_PYRSEGMENT1,427,234,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Slider2",IDC_SLIDER_PYRSEGMENT2,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,332,250,76,14
+    EDITTEXT        IDC_EDIT_PYRSEGMENT2,427,249,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "参数1:",IDC_STATIC_PYRSEGMENT1,409,240,24,8,NOT 
+                    WS_GROUP
+    LTEXT           "参数2:",IDC_STATIC_PYRSEGMENT2,409,255,24,8,NOT 
+                    WS_GROUP
+    PUSHBUTTON      "图像增强",IDC_BTN_STHENGTHEN,380,34,28,20,BS_MULTILINE
+    GROUPBOX        "",IDC_STATIC_COMBOBOX,310,0,146,328
+    CONTROL         "",IDC_STATIC_LINE1,"Static",SS_ETCHEDHORZ | SS_SUNKEN,
+                    311,59,145,1
+    PUSHBUTTON      "二值输出",IDC_BTN_THRSHOLD,421,10,28,20,BS_MULTILINE
+    PUSHBUTTON      "人脸检测",IDC_BTN_FACEDETECTION,421,34,28,20,
+                    BS_MULTILINE
+    PUSHBUTTON      "恢复原图",IDC_BTN_RECOVERORIMAGE,380,10,28,20,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    CONTROL         "",IDC_STATIC_LINE3,"Static",SS_ETCHEDHORZ | SS_SUNKEN,
+                    311,149,145,1
+    CONTROL         "膨胀",IDC_RADIO_EXPEND,"Button",BS_AUTORADIOBUTTON,332,
+                    153,32,10
+    CONTROL         "形态学腐蚀",IDC_RADIO_ERODE,"Button",BS_AUTORADIOBUTTON,
+                    400,153,56,10
+    CONTROL         "",IDC_STATIC_LINE4,"Static",SS_ETCHEDHORZ | SS_SUNKEN,
+                    311,184,145,1
+    CONTROL         "Slider1",IDC_SLIDER_EXPEND,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,332,166,76,14
+    CONTROL         "",IDC_STATIC_LINE5,"Static",SS_ETCHEDHORZ | SS_SUNKEN,
+                    311,219,145,1
+    CONTROL         "",IDC_STATIC_LINE6,"Static",SS_ETCHEDHORZ | SS_SUNKEN,
+                    311,267,145,1
+    PUSHBUTTON      "打开",IDC_BTN_OPEN,345,10,28,20,BS_MULTILINE
+    CONTROL         "",IDC_STATIC_LINE2,"Static",SS_ETCHEDHORZ | SS_SUNKEN,
+                    311,113,145,1
+    CONTROL         "Slider2",IDC_SLIDER_BRIGHTNESS,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,345,60,76,14
+    CONTROL         "Slider2",IDC_SLIDER_CONTRAST,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,345,75,76,14
+    CONTROL         "Slider2",IDC_SLIDER_LIGHTNESS,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,345,90,76,14
+    EDITTEXT        IDC_EDIT_BRIGHTNESS,427,62,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_CONTRAST,427,79,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_LIGHTNESS,427,96,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIMES,427,166,29,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "次数:",IDC_STATIC_TIMES,409,170,21,8
+    PUSHBUTTON      "保存",IDC_BTN_SAVE,345,34,28,20
+    CONTROL         "亮度:",IDC_RADIO_BRIGHTNESS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,312,65,36,10
+    CONTROL         "对比:",IDC_RADIO_CONTRAST,"Button",BS_AUTORADIOBUTTON,
+                    312,79,36,10
+    LTEXT           "明暗:",IDC_STATIC_LIGHTNESS,321,93,21,8
+END
+
+IDD_DIALOGBAR DIALOG DISCARDABLE  0, 0, 137, 316
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,31,27,84,244
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "H264Player Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "H264Player\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "H264Player.EXE\0"
+            VALUE "ProductName", "H264Player 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_H264PLAYER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+    END
+
+    IDD_POTOPROCESSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 484
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 336
+    END
+
+    IDD_DIALOGBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 309
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BG                  BITMAP  DISCARDABLE     "res\\bg.bmp"
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)",                    IDR_FILE_OPEN
+        MENUITEM "退出(&Q)",                    IDCANCEL
+    END
+    POPUP "播放(&P)"
+    BEGIN
+        MENUITEM "播放/暂停(&P)",               IDC_PLAY
+    END
+    POPUP "显示(&V)"
+    BEGIN
+        MENUITEM "原始尺寸(&O)",                IDR_VIEW_ORIGINALSIZE
+        MENUITEM "全屏显示(&F)",                IDR_VIEW_FULLSCRREN
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)",                    IDR_ABOUTBOX
+    END
+END
+
+IDR_MENU_POTOPROCESSOR MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)",                    IDR_FILE_OPEN
+        MENUITEM "退出(&Q)",                    IDCANCEL
+    END
+    MENUITEM "编辑(&E)",                    65535
+    MENUITEM "工具(&T)",                    65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      32787
+    BUTTON      32788
+    BUTTON      32789
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 H264Player(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\H264Player.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
